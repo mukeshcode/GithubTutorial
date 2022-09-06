@@ -1,0 +1,20 @@
+Cloning a Remote Git Repository from GitHub
+--------------------------------------------------
+
+Use command 
+rm -rf .git
+to delete all the contents of the .git folder. rm -rf command is used to delete all the contents of a particular folder. Here, this command turns a git repository to a simple directory or folder.
+Running "git status" command after deleting the contents of the .git folder turns the directory to a normal folder.
+
+ls 
+to list all the contents of the present working directory
+
+pwd
+present working directory. It displays the current working directory.
+
+Cloning
+--------
+
+git clone "URL of the repository" name_required_on_local_machine
+
+name_required_on_local_machine is optional. If not specified will take the name of the repository.

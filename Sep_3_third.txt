@@ -1,0 +1,26 @@
+Tracking our first project
+-----------------------------
+
+Commands to proceed
+___________________
+
+git status  
+for checking the status of the git repository. If the given directory is not a git repository then it will result in a fatal message telling that it is not a git repository and not in even any of the parent directories.
+
+git init
+for converting a local directory to a git repository. It will add an hidden .git folder to the directory and starts trackting the repository.
+Now if you do git status, then it will give you a different message.
+
+git add --a
+"git add" means moving the particular files to the staging area, from where it will be committed.
+"git add --a" means moving all the files in the directory to the staging area, from where it can be committed.
+You can chose to commit some files out of all the present options by 
+"git add filename".
+
+
+git commit -m "Some message"
+"git commit" captures a snapshot of the repository.
+
+
+git log
+This command is used to see all the commits made in the repository. You will also get a Hash code to rollback to any of the previous versions of the repository.

@@ -1,0 +1,34 @@
+     Installing Git & Initial Setup
+______________________________
+
+Downloading Git
+-------------------
+1. Download "Git" from its official website "git scm".
+2. Install git, without changing any of the marked properties.
+
+Installing git gives two important facilities : 
+1. Git Command line tool - There are even Git GUIs available to do all the tasks like pushing, pu
+2. Git Bash(Termial program)
+
+Initial Setup
+----------------
+1. Open GitBash. GitBash is a simple terminal for Git. Its similar to powershell of windows, terminal of ubuntu.
+
+Some of the things which are needed to setup are :
+ 
+1. Your user name
+-----------------------------------------------------
+git config --global user.name "mukeshcode"       |
+-----------------------------------------------------
+
+for checking the user name 
+git config --global user.name
+
+2. Your email id
+
+--------------------------------------------------------------------
+git config --global user.email "mukesh.official14@gmail.com"   |
+--------------------------------------------------------------------
+
+for checking the email id
+git config --global user.email

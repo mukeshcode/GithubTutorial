@@ -1,0 +1,48 @@
+1. What is Git and GitHub? Why do we need it?
+----------------------------------------------------
+
+# Git is a version control system. (VCS)
+# Every piece of software is getting evolved.
+# The changes made during the evolvement of program is tracked using version control system.
+
+#Uses of Version Control System
+1. Easily recover files.
+2. Who introduced an issue and when.
+3. Rollback to previously working state.
+
+#History of Version Control System
+1. Local VCS - This version control system was able to do all the functions supported by a version  control system, but the data would be stored using databases setup on local computers. This leads a high risk of security, as losing the local computer would mean losing the project.
+Pros-Can track files and rollback.
+Cons - If you lose your harddisk everything is lost.
+
+2. Centralized VCS - This version control system has a central server, where the master project is saved and the different users collaborate by pulling and pushing onto the server.
+Pros - If you lose your personal harddisk everything is not lost.
+Cons - If you lose the server then, all the previous versions will be lost and you will end up with the only latest versions which you have on your PC.
+
+3. Distributed VCS - Distributed VCS allows pulling of the complete repository along with the previous versions. So, even if the server is lost every individual will have the latest version of the project along with the full backup.
+Pros - Every individual user will have their copy of the total project along with the previous versions.
+Cons - 
+
+
+## Git is a distributed Version Control System.
+
+#How was Git created?
+During the early phases of Linux Kernel development from 1991-2002, Linus Torvalds alongwith with the other contributors felt the need of a Version Control System. In the year 2002, a company named Bitkeeper agreed to provide the free VCS software. Surprisingly, in the year 2005, Bitkeeper withdrew their hand and asked for a heavy amount for continuing the use of the VCS software. All the collaborators of the Linux Kernel along wiht Linus Torvalds were astonished and as they had no money till then, the support of the VCS discontinued.
+Now, Linus Torvalds thought of developing his own version control system and that's how GIT got created. Now Git is the undisputed mostly used Version Control System.
+
+## What is Github?
+Git was a website. Github is a hosting service for Git Repositories. The GIT software is completely free. The hosting services like GitHub, GitLab and BitBucket are some of the famous hosting services which host the repositories of GIT.
+An individual can also develop a website to host Git Repositories.
+Repositories in Git contain a collection of files of various different versions of a project.
+
+##Features of GIT
+1. Snapshots not differences
+    While creating a GIT repository, a .git folder is made which contains all the details of all the versions and changes made in the project.
+   .git is a hidden folder in the repository which contains all the history of the project. It can provide you any version of your product.
+2. Almost every operation is local. Operations like pulling, pushing, cloning, forking, etc. involves the use of remote server, but other 
+   these every operation can be performed on the local machine. The source code will be modified on the local and will be later
+   transferred to the centralized server.
+3. Git has integrity - Git makes sure that no one can alter the content of .git folder, by internally calculating the SHA-1 checksum. Every      
+   file has a different SHA(Secure Hash Algorithm) which is used to verify whether has been received without any alteration in between or
+   not. Even a smallest of change can change the SHA algorithm and it will be understood that, someone has altered the file.
+4. Git generally only adds data.

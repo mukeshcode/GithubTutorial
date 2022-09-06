@@ -1,0 +1,26 @@
+---File Status Lifecycle---
+
+->There are four stages in the lifecycle of a file in a git repository.
+1. Untracked	2. Unmodified 		3. Modified 	4. Staged
+
+1. Untracked -> The files which are not yet staged for being committed are understood to be in the untracked stage. When a directory is converted to a git repository, then all the files inside it are in untracking state i.e. the .git folder has no information about the status of the folders and files. The command "git add --a" pushes all the untracked files to unmodified or staged state.
+
+2. Unmodified -> When a file is added to be staged for committing, it is said to be in the unmodified state.
+
+3. Modified -> Any modification in any staged file sends the file to the modified state. The version of the file kept at the unmodified state remains there, but the newest modified version is sent to the modified state and it needs to be added again. Committing at that time results in having a snapshot of the previous version of the file and not the newest modified one.
+
+4. Staged -> File is committed from the staged state. At this state, a snapshot of the current version is captured. The .git folder will be able to produce this version if demanded any time.
+
+Untracked		Unmodified		Modified			Staged
+
+	|				|				|				|
+	|				|				|				|
+	|--->add the file	|-->edit the file 	|				|
+	|				|				|				|
+	|remove the file<--	|				|-->stage the file	|
+	|				|				|				|
+	|				|				|				|
+	|				|				|				|
+	|				|				|				|
+	|				|				|				|
+	|				|COMMIT<<----------------------------	|

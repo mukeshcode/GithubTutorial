@@ -1,0 +1,26 @@
+Git Three Stage Architecture
+----------------------------------
+
+What is staging area? What is working area? What is git directory? What does staging means?
+Committing means capturing snapshot of a directory as it is. Further, you will be able to rollback to this directory whenever you desire.
+
+Now, we have three stage architecture in git which are:
+1. Working directory, 2. Staging area, 3. Git repository
+1. Your working directory is your local on the machine.
+2. Staging area comprises of all the files which you want to be committed to the Git Repository.
+3. Git directory consists of a hidden .git folder which has all the history of previous snapshots/commits. You can easily rollback to any of the previous versions of the GIT using this .git folder.
+
+Local Operations
+---------------------
+__________________________________________________________________
+			      		|	                               |
+Working directory  		|	Staging area		   |		Git Directory(Repository)
+____________________|_____________________|_________________________
+	|						|						|
+	|						|						|
+	|  <<<<<--------Checkout-- | ----------the project-------	|
+	|						|						|
+	|---Stage Files-------->>>>	|						|
+	|						|------Commit----->>>>>	|
+	|						|						|
+	*						*						*
